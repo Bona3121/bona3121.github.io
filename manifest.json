@@ -1,0 +1,24 @@
+{
+    "name": "Cotephio PWA",
+    "short_name": "My PWA",
+    "description": "Aplikasi PWA Cotephio",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#228B22",
+    "theme_color": "#228B22",
+    "icons": [
+        {
+            "src": "img/tes.png",
+            "sizes": "512x512",
+            "type": "image/png",
+			"purpose": "maskable"
+        },
+		{
+            "src": "img/icon2.png",
+            "sizes": "144x144",
+            "type": "image/png",
+			"purpose": "any maskable"
+        }
+    ],
+	"gcm_sender_id": "262566948937"
+}
