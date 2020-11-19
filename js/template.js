@@ -78,8 +78,8 @@ function showTeamById(data) {
 }
 
 function showSavedTeam(teambolas) {
-  var teambolasHTML = "";
-  if teambolas.forEach(function (teambola) {
+ var teambolasHTML = "";
+  teambolas.forEach(function (teambola) {
     teambolasHTML += `
 	            <div class="col s12 m6">
                   <div class="card">
@@ -97,9 +97,10 @@ function showSavedTeam(teambolas) {
                   </div>
 				 </div> 
                 `;
-  })
-  else { (teambolasHTML == 0) html += '<h6 class="center-align">Tidak ada team favorite!</6>' }
-
-    html += "</div>"
+  });
+  if (!teambolasHTML) { 
+  document.getElementById("saved").innerHTML = '<h5 class="center-align">Tidak ada team favorite</5>';
+  } else {
   document.getElementById("saved").innerHTML = teambolasHTML;
+  }
 }
