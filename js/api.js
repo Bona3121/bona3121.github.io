@@ -115,7 +115,7 @@ function getTeamBolaById() {
 function getSavedTeambolaById(data) {
   var urlParams = new URLSearchParams(window.location.search);
   var idParam = urlParams.get("id");
-  getById.then(function (data) {
+  getById.then(function (data){
   var teambolaHTML = `
         <div class="col s12 m12">
               <div class="card">

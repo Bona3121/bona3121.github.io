@@ -7,6 +7,7 @@ else
 
 workbox.precaching.precacheAndRoute(
      [
+	 { url: '/', revision: '1' },
      { url: '/index.html', revision: '1' },
 	 { url: '/teambola.html', revision: '1' },
 	 { url: '/nav.html', revision: '1' },
