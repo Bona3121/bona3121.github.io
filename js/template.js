@@ -97,6 +97,9 @@ function showSavedTeam(teambolas) {
                   </div>
 				 </div> 
                 `;
-  });
+  })
+  if(data.length == 0) html += '<h6 class="center-align">Tidak ada team favorite!</6>'
+
+    html += "</div>"
   document.getElementById("saved").innerHTML = teambolasHTML;
 }
