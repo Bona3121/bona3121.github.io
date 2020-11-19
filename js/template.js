@@ -79,7 +79,7 @@ function showTeamById(data) {
 
 function showSavedTeam(teambolas) {
   var teambolasHTML = "";
-  teambolas.forEach(function (teambola) {
+  if teambolas.forEach(function (teambola) {
     teambolasHTML += `
 	            <div class="col s12 m6">
                   <div class="card">
@@ -98,7 +98,7 @@ function showSavedTeam(teambolas) {
 				 </div> 
                 `;
   })
-  if(teambolasHTML.length == 0) html += '<h6 class="center-align">Tidak ada team favorite!</6>'
+  else { (teambolasHTML == 0) html += '<h6 class="center-align">Tidak ada team favorite!</6>' }
 
     html += "</div>"
   document.getElementById("saved").innerHTML = teambolasHTML;
