@@ -112,6 +112,27 @@ function getTeamBolaById() {
   });
 }
 
+function getSavedTeambolaById(data) {
+  var urlParams = new URLSearchParams(window.location.search);
+  var idParam = urlParams.get("id");
+  getById.then(function (data) {
+  var teambolaHTML = `
+        <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                  <img src="${data.crestUrl.replace(/^http:\/\//i, 'https://')}" />
+                </div>
+                <div class="card-content">
+                  <span class="card-title">${data.name}</span>
+                  <p>${data.founded} </p>
+                </div>
+              </div>
+        </div>
+            `;
+  document.getElementById("body-content").innerHTML = teambolaHTML;
+  })
+}
+
 function getSavedTeambolas() {
   getAll().then(function (teambolas) {
     showSavedTeam(teambolas);

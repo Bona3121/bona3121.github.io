@@ -77,6 +77,8 @@ function showTeamById(data) {
   document.getElementById("body-content").innerHTML = teambolaHTML;
 }
 
+
+
 function showSavedTeam(teambolas) {
  var teambolasHTML = "";
   teambolas.forEach(function (teambola) {
