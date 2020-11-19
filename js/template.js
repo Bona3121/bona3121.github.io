@@ -98,7 +98,7 @@ function showSavedTeam(teambolas) {
 				 </div> 
                 `;
   })
-  if(teambolas.length == 0) html += '<h6 class="center-align">Tidak ada team favorite!</6>'
+  if(teambolasHTML.length == 0) html += '<h6 class="center-align">Tidak ada team favorite!</6>'
 
     html += "</div>"
   document.getElementById("saved").innerHTML = teambolasHTML;
