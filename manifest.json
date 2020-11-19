@@ -11,7 +11,7 @@
             "src": "img/tes.png",
             "sizes": "512x512",
             "type": "image/png",
-			"purpose": "maskable"
+			"purpose": "any maskable"
         },
 		{
             "src": "img/icon2.png",

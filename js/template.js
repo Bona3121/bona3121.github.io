@@ -101,7 +101,7 @@ function showSavedTeam(teambolas) {
                 `;
   });
   if (!teambolasHTML) { 
-  document.getElementById("saved").innerHTML = '<h5 class="center-align">Tidak ada team favorite</5>';
+  document.getElementById("saved").innerHTML = '<h5 class="center-align">Tidak ada team favorite</h5>';
   } else {
   document.getElementById("saved").innerHTML = teambolasHTML;
   }

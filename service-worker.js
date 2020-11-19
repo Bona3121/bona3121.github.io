@@ -31,6 +31,7 @@ workbox.precaching.precacheAndRoute(
 	 { url: '/js/nav.js', revision: '1' },
 	 { url: '/js/register-sw.js', revision: '1' },
 	 { url: '/js/template.js', revision: '1' },
+	 { url: 'https://fonts.googleapis.com/icon?family=Material+Icons', revision: '1' },
 	 ],
 	 {
 
@@ -69,7 +70,7 @@ workbox.routing.registerRoute(
 workbox.routing.registerRoute(
   new RegExp('/pages/'),
     workbox.strategies.staleWhileRevalidate({
-        cacheName: 'pages'
+        cacheName: 'cotephio-pages'
     })
 );
 
