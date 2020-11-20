@@ -35,7 +35,7 @@ workbox.precaching.precacheAndRoute(
 	 ],
 	 {
 
-      ignoreURLParametersMatching: [/.*/],
+      ignoreUrlParametersMatching: [/.*/],
 
      }
      );
