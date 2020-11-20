@@ -85,7 +85,7 @@ function showSavedTeam(teambolas) {
     teambolasHTML += `
 	            <div class="col s12 m6">
                   <div class="card">
-                    <a href="./teambola.html?id=${teambola.id}&saved=true">
+                    <a href="./teambola.html?id=${teambola.id}&#saved=true">
                       <div class="card-image waves-effect waves-block waves-light">
                         <img src="${teambola.crestUrl.replace(/^http:\/\//i, 'https://')}" />
                       </div>
