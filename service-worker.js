@@ -60,19 +60,20 @@ workbox.routing.registerRoute(
   }),
 );
 
-
-    workbox.routing.registerRoute(
-        new RegExp('https://api.football-data.org/'),
-        workbox.strategies.staleWhileRevalidate()
-        )
-		
-
 workbox.routing.registerRoute(
-  new RegExp('/pages/'),
-    workbox.strategies.staleWhileRevalidate({
-        cacheName: 'cotephio-pages'
-    })
+  new RegExp('https://api.football-data.org/v2/'),
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: 'cotephio-api',
+  })
 );
+ 
+workbox.routing.registerRoute(
+  new RegExp('https://crests.football-data.org/'),
+  workbox.strategies.staleWhileRevalidate({
+    cacheName: 'cotephio-api-images',
+  })
+);
+
 
 
 self.addEventListener('push', function (event) {
